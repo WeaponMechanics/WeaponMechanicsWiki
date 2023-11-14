@@ -96,7 +96,7 @@ This method is just like vanilla, but it uses the most CPU. Great for weapons th
 {% tab title="OPTIMIZED" %}
 `Explosion_Exposure: OPTIMIZED`
 
-Similar to the DEFAULT method, but uses less ray tracing. Great for
+Similar to the DEFAULT method, but uses less ray tracing. Great choice for every server.&#x20;
 {% endtab %}
 
 {% tab title="DISTANCE" %}
@@ -107,10 +107,12 @@ Works by calculating the distance between the entity and the center of the explo
 Since this method does not use ray tracing, explosions can damage entities through walls.&#x20;
 {% endtab %}
 
-{% tab title="Untitled" %}
+{% tab title="NONE" %}
 `Explosion_Exposure:  NONE`
 
-The fastest method, applies total exposure to all entities within the explosion shape.&#x20;
+The fastest method, applies 100% exposure to all entities within the explosion shape. This should almost never be used, since it will damage entities through walls with full damage, no matter how far away from the explosion's center they are.
+
+This should only be used for tiny explosions. &#x20;
 {% endtab %}
 {% endtabs %}
 
@@ -137,6 +139,10 @@ The following example creates a large explosion with increased detail.
       Yield: 15.0
       Rays: 32
 ```
+
+{% hint style="danger" %}
+The `DEFAULT` explosion shape **cannot** destroy blocks that vanilla explosions can break. For example, obsidian and bedrock cannot be broken. If you want to damage these blocks, use another shape, like `SPHERE`.&#x20;
+{% endhint %}
 {% endtab %}
 
 {% tab title="SPHERE" %}
@@ -333,18 +339,20 @@ Mechanics to trigger when the explosion occurs. Used to play an explosion sound 
 * `@Source{}` -> The shooter of the weapon.
 * `@Target{}` -> The location of the explosion (not an entity).
 
+***
+
 ## Explosion Example
 
-This explosion breaks a few specific blocks (see below) in a 5.5-block radius (using the vanilla explosion method). Blocks begin to regenerate after 2 minutes.
+This explosion breaks a few specific blocks (see below) in a 5.5-block radius. Blocks begin to regenerate after 2 minutes.
 
 Bedrock, obsidian, and netherite cannot be damaged. Any material with "glass" in its name is broken in 2 shots, except for any material with "glass\_pane" in the name, which can be broken in 1 shot. Any material with "wood" in the name can be broken in 6 shots, and dirt can be broken in 4 shots. All other materials cannot be broken, but they appear to take 12 shots of damage and show the crack animation. 10 seconds after a block is broken, it is regenerated.
 
 ```yaml
   Explosion:
     Explosion_Exposure: DEFAULT
-    Explosion_Shape: DEFAULT
+    Explosion_Shape: SPHERE
     Explosion_Type_Data:
-      Yield: 5.5
+      Radius: 5.5
     Block_Damage: 
       Spawn_Falling_Block_Chance: 20% 
       Default_Block_Durability: 12
@@ -362,3 +370,7 @@ Bedrock, obsidian, and netherite cannot be damaged. Any material with "glass" in
       Max_Blocks_Per_Update: 4
       Ticks_Between_Updates: 5
 ```
+
+{% hint style="success" %}
+Notice how `$glass_pane` is below `$glass$`. This is because **order matters**. When using the wildcard character `$`, make sure to use the "more general blocks" (Like any glass block) **before** the "more specific blocks" (Like any glass pane).&#x20;
+{% endhint %}
