@@ -70,6 +70,7 @@ Make sure you replace `<ammo_title>` with a unique name for your ammo, and do no
       Name: <true/false>
       Lore: <true/false>
       Enchantments: <true/false>
+      Custom_Model_Data: <true/false>
 ```
 
 #### Symbol
@@ -98,3 +99,4 @@ Consumes items to be used as ammo. You can use one of `Bullet_Item` or `Magazine
   * (_Optional_)
   * Converts vanilla items into ammo usable by WeaponMechanics automatically.
   * For example, `Type: true` will convert all items of the same material to usable ammo.&#x20;
+  * This is the same as [#weapon\_converter\_check](../info.md#weapon\_converter\_check "mention").

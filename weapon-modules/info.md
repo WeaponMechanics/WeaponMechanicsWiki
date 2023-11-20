@@ -18,6 +18,7 @@ The `Info:` module is required for all weapons
       Name: <true/false>
       Lore: <true/false>
       Enchants: <true/false>
+      Custom_Model_Data: <true/false>
     Weapon_Get_Mechanics: <Mechanics>
     Weapon_Equip_Mechanics: <Mechanics>
     Weapon_Equip_Delay: <ticks>
@@ -129,6 +130,9 @@ For a regular item to become a "weapon," WeaponMechanics checks if the item shou
 * `Enchants`
   * Check if the enchantments of the item are the same.
   * Note: Check both the enchantments _AND_ the levels.
+* `Custom_Model_Data`
+  * Check if the custom model data is the same.&#x20;
+  * This is _faster_ then `Lore` and `Name`, and gives good plugin compatibility!
 
 #### Weapon\_Get\_Mechanics
 
