@@ -27,3 +27,7 @@
 * [Developer API](developer-api/README.md)
   * [Cloning Repository](developer-api/cloning-repository.md)
   * [Projectile Scripts](developer-api/projectile-scripts.md)
+
+## 📄 Articles
+
+* [Optimizing Explosions](articles/optimizing-explosions.md)
