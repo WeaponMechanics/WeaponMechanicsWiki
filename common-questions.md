@@ -53,3 +53,16 @@ Disable_Entity_Explode_Event: true  # change this to true
 Disable_Block_Break_Event: true  # change this to true
 ```
 
+***
+
+#### <mark style="color:green;">Does WeaponMechanics support Folia?</mark>
+
+No. Unfortunately, none of the 'Mechanics Plugins' (Including WeaponMechanics, ArmorMechanics, etc.) support Folia, and we do not have any plans to support Folia due to the difficulties in supporting it. If you are willing to fund development of Folia support, send me a message on Discord @CJCrafter.&#x20;
+
+WeaponMechanics officially supports Spigot and Paper. Forks of Paper _will probably work_, but are not officially supported.&#x20;
+
+***
+
+#### <mark style="color:green;">I don't want my guns to stack, how can I make the weapons unstackable?</mark>
+
+You'll have to change the configs to an unstackable item, like a shovel. This means you will also have to modify the resource pack's feather.json, so the resource pack applies to the modified items.&#x20;
