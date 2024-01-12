@@ -78,6 +78,7 @@ Stim:
     Recoil:  # Scroll down for more information
     Mechanics: <Mechanics>
     Custom_Durability:  # Scroll down for more information 
+    Attract_Mobs:  # Scroll down for more information, WMP feature
 ```
 
 #### Trigger
@@ -174,10 +175,53 @@ Check out the [recoil.md](recoil.md "mention") wiki page.
 
 #### Mechanics
 
-Mechanics triggered when shooting. Use the [Mechanics](http://127.0.0.1:5000/o/MgHAZkcfIhs3YcmBjk2r/s/hz7yMxlL81NxAT44nraH/ "mention") wiki.&#x20;
+Mechanics triggered when shooting. Use the [Mechanics](https://app.gitbook.com/o/MgHAZkcfIhs3YcmBjk2r/s/hz7yMxlL81NxAT44nraH/ "mention") wiki.&#x20;
 
 * `@Source{}` -> The entity shooting the gun.
 
 #### Custom\_Durability
 
 Check out the [#custom\_durability](./#custom\_durability "mention") wiki page.&#x20;
+
+#### Attract\_Mobs
+
+{% hint style="warning" %}
+This is a WeaponMechanicsPlus feature. You need to purchase it before you can use the `Attract_Mobs` feature.
+{% endhint %}
+
+Allows you to attract creatures to your location. This is great for zombie survival servers, since you can alert all zombies in a radius to attack the shooter.
+
+```yaml
+  Shoot:
+    Attract_Mobs:  # This has to go in the "Shoot" section
+      Skip_Chance: 50%
+      Default_Mode: <CANCEL/ATTRACT>
+      Default_Distance: <distance>
+      Default_Chance: 100%
+      Default_Override_Current_Target: <true/false>
+      Mobs:
+        - <mob*> <CANCEL/ATTRACT*> <distance> <chance> <override current target>
+      Mechanics: <Mechanics>
+```
+
+* `Skip_Chance` -> If this is `75%`, then there is a 75% chance that we will skip all attract mob calculations, and no mobs will be attracted. This is primarily done for performance. Defaults to `0%`.
+* `Default_Mode` -> Use `ATTRACT` to attract ALL mobs by default.
+* `Default_Distance` -> The default distance to attract all mobs from. Distance is measured in blocks. Defaults to `40.0`.&#x20;
+* `Default_Chance` -> The chance to attract that specific mob. This is mainly useful to "stagger" the number of mobs that are attracted at once. Defaults to `100%`.
+* `Default_Override_Current_Target` -> Use `true` to override the current mob's target. Defaults to `false`.
+* `Mobs` -> The mob list for specific entity configurations.
+* `Mechanics` -> The mechanics to play whenever a mob targets you.
+
+**Example:**
+
+<pre class="language-yaml"><code class="lang-yaml"><strong>  Shoot:
+</strong><strong>    # This example will attract all zombies in a 60 block radius,
+</strong><strong>    # regardless whether or not you are wearing a zombie head. When
+</strong><strong>    # a zombie is initially targeted to you, they will recieve a 6
+</strong><strong>    # second speed boost. This is enough for them to catch up to you.
+</strong>    Attract_Mobs:
+      Mobs:
+        - ZOMBIE ATTRACT 60.0 100%
+      Mechanics:
+        - "Potion{potion=SPEED, level=3, time=120} @Target{}"
+</code></pre>
