@@ -42,6 +42,10 @@
 
 Damage is calculated by summing base damage, and then applying all [#damage-modifiers](./#damage-modifiers "mention").&#x20;
 
+#### Base\_Damage
+
+The amount of damage before any damage modifiers are applied.&#x20;
+
 #### Base\_Explosion\_Damage
 
 The amount of damage the [explosion](../explosion/ "mention") deals (at the center of the explosion).&#x20;
@@ -64,7 +68,7 @@ Defines how much damage to apply to the victim's armor. You probably want this n
 
 #### Mechanics
 
-The mechanics to trigger when damaging an entity. Use the [Mechanics](http://127.0.0.1:5000/o/MgHAZkcfIhs3YcmBjk2r/s/hz7yMxlL81NxAT44nraH/ "mention") wiki.&#x20;
+The mechanics to trigger when damaging an entity. Use the [Mechanics](https://app.gitbook.com/o/MgHAZkcfIhs3YcmBjk2r/s/hz7yMxlL81NxAT44nraH/ "mention") wiki.&#x20;
 
 * `@Source{}` -> The shooter.
 * `@Target{}` -> The entity being damaged (the victim).
