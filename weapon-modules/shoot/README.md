@@ -64,7 +64,7 @@ Stim:
     Selective_Fire:
       Trigger: <Trigger>
       Default: <SINGLE/BURST/AUTO>
-      Mechanics: <MechanicsSerializer>
+      Mechanics: <Mechanics>
     Delay_Between_Shots: <ticks>
     Fully_Automatic_Shots_Per_Second: <amount>
     Burst:
@@ -79,6 +79,15 @@ Stim:
     Mechanics: <Mechanics>
     Custom_Durability:  # Scroll down for more information 
     Attract_Mobs:  # Scroll down for more information, WMP feature
+    Offsets:
+      Right_Hand: <Vector>
+      Left_Hand: <Vector>
+      Scope:
+        Right_Hand: <Vector>
+        Left_Hand: <Vector>
+      Vive:
+        Right_Hand: <Vector>
+        Left_Hand: <Vector>
 ```
 
 #### Trigger
@@ -225,3 +234,11 @@ Allows you to attract creatures to your location. This is great for zombie survi
       Mechanics:
         - "Potion{potion=SPEED, level=3, time=120} @Target{}"
 </code></pre>
+
+### Offsets
+
+Offsets let you adjust the exact position that projectiles are spawned at. For example, you might want bullets to travel out of the tip of the barrel instead of shooting out of the player's face.&#x20;
+
+* By default, `Left_Hand` and `Right_Hand` will be used.
+* If the player is scoping, the `Scope` section will be used.
+* If the player is in VR, the `Vive` section will be used.
