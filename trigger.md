@@ -23,6 +23,7 @@ description: Configurable weapon controls
       Swimming: <DENY/REQUIRED>
       In_Midair: <DENY/REQUIRED>
       Gliding: <DENY/REQUIRED>
+      Ammo_Empty: <DENY/REQUIRED>
       Deny_Mechanics: <Mechanics>
 ```
 
@@ -86,10 +87,11 @@ For the following options, use:
 * `Swimming` -> If the shooter is currently submerged underwater or sprint swimming.&#x20;
 * `In_Midair` -> If the shooter is not on the ground.
 * `Gliding` -> If the shooter is gliding with an elytra.
+* `Ammo_Empty` -> If the held weapons are empty
 
 #### Deny\_Mechanics
 
-The mechanics to play when the trigger is denied. Usually, this is a sound queue (like an angry villager) or an action bar alerting the user that they cannot perform that action. Use the [Mechanics](http://127.0.0.1:5000/o/MgHAZkcfIhs3YcmBjk2r/s/hz7yMxlL81NxAT44nraH/ "mention") wiki.
+The mechanics to play when the trigger is denied. Usually, this is a sound queue (like an angry villager) or an action bar alerting the user that they cannot perform that action. Use the [Mechanics](https://app.gitbook.com/o/MgHAZkcfIhs3YcmBjk2r/s/hz7yMxlL81NxAT44nraH/ "mention") wiki.
 
 * `@Source{}` -> The player who attempted to use the trigger
 * `<deny_reason>` -> Which "action" caused the denial.&#x20;
