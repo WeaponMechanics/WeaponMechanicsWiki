@@ -2,77 +2,61 @@
 
 Recoil moves the player's screen horizontally and/or vertically. This simulates rifle recoil, and makes the gun harder to control.
 
+More technically, every shot
+
 ```yaml
     Recoil:
-      Push_Time: <push time in millis>
-      Recover_Time: <recover time in millis>
-      Horizontal:
-        - <horizontal recoil>
-        - <etc.>
-      Vertical:
-        - <vertical recoil>
-        - <etc.>
-      Recoil_Pattern:
-        Repeat_Pattern: <true/false>
-        List:
-          - <horizontal recoil>-<vertical recoil>-<chance to skip>%
-          - <etc.>
-      Modify_Recoil_When:
-        Zooming: <amount> or <amount>%
-        Sneaking: <amount> or <amount>%
-        Standing: <amount> or <amount>%
-        Walking: <amount> or <amount>%
-        Riding: <amount> or <amount>%
-        Sprinting: <amount> or <amount>%
-        Dual_Wielding: <amount> or <amount>%
-        Swimming: <amount> or <amount>%
-        In_Midair: <amount> or <amount>%
-        Gliding: <amount> or <amount>%
+      Mean_X: <number>
+      Mean_Y: <number>
+      Variance_X: <number>
+      Variance_Y: <number>
+      Speed: <number>
+      Damping: <number>
+      Damping_Recovery: <number>
+      Smoothing: <number>
+      Max_Accumulation: <number>
 ```
 
-#### Push\_Time
+#### Mean\_X/Y
 
-The time, in milliseconds, it takes to reach the full recoil amount. Higher numbers = worse performance, but smoother movement.
+A base, guaranteed recoil offset on each shot. For example, `Mean_Y: 1.5` means each shot tends to push the view up by
+around 1.5 degrees. This is your "main recoil" config, and you tweak these values to increase/decrease the recoil.
 
-Use `0` to instantly push to the full recoil amount (suggested for automatic rifles).
+This value is measured in degrees.
 
-#### Recover\_Time
+#### Variance\_X/Y
 
-The time, in milliseconds, it takes to recover back to the player's starting yaw/pitch.&#x20;
+Adds random variation around the mean value. For example, if `Mean_X: 0.2` and `Variance_X: 0.3`, each shot can be anywhere
+from `-0.1` to `+0.5` horizontally. Larger variances = less predictable spread. 
 
-{% hint style="info" %}
-After `Push_Time` is complete, there is a 60-millisecond cooldown before recovery starts.
-{% endhint %}
+This value is measured in degrees.
 
-#### Horizontal
+#### Speed
 
-The list of horizontal recoil amounts. WeaponMechanics randomly chooses 1 value from the list for each shot.&#x20;
+How snappy or forceful the recoil "kick" is each tick. Higher values = stronger immediate kick.
 
-{% hint style="info" %}
-left=negative numbers, right=positive numbers. Values `<10` are recommended.&#x20;
-{% endhint %}
+Each tick, the difference between the current offset and the target offset is multiplied by this speed
+value. Typically, you might use a value in the range `[2, 6]`. An automatic weapon, or weapon with less
+recoil should probably have a value closer to 2. A larger caliber weapon, like a sniper rifle, should have 
+a value closer to 6.
 
-#### Vertical
+#### Damping
 
-The list of vertical recoil amounts. WeaponMechanics randomly chooses 1 value from the list for each shot.
+Each tick, the "target recoil" is multiplied by `(1 - damping)`. This prevents infinite buildup
+when shooting rapidly. For example, `Damping: 0.1` means each tick, the stored "target" recoil
+shrinks by 10%. 
 
-{% hint style="info" %}
-down=negative numbers, up=positive numbers. Values `<10` are recommended.
-{% endhint %}
+#### Damping_Recovery
 
-#### Recoil\_Pattern
+How quickly your *current* recoil recovers to 0. Larger values pull the camera back down faster 
+after each shot.
 
-This pattern lets you define an ordered list to form a precise pattern. Unlike [#horizontal](recoil.md#horizontal "mention") and [#vertical](recoil.md#vertical "mention") (Which are chosen randomly), this option lets you define the exact order.&#x20;
+#### Smoothing
+A factory (0.0 to 1.0) that controls how "smoothly" the camera transitions to its new recoil offset.
+Lower values = more abrupt. Higher values = more fluid. 
 
-This option overrides [#horizontal](recoil.md#horizontal "mention") and [#vertical](recoil.md#vertical "mention").
+#### Max_Accumulation
+Maximum total recoil allowed before we clamp it off. Useful to stop a fully automatic weapon from
+pushing the camera infinitely high. 
 
-* `Repeat_Pattern`
-  * `true` -> After reaching the end of the pattern, loop back to the beginning.&#x20;
-  * `false` -> After reaching the end of the pattern, use [#horizontal](recoil.md#horizontal "mention") and [#vertical](recoil.md#vertical "mention") instead.&#x20;
-* `List`
-  * Format is `<horizontal> <vertical> <skipChance>`
-  * `<skipChance>` should be a number between 0 and 100. Defaults to 0.&#x20;
-
-#### Modify\_Recoil\_When
-
-Same as [#modify\_spread\_when](spread.md#modify\_spread\_when "mention"), but for recoil.
+In general, you should prefer to use [#damping](recoil.md#damping "mention") to limit the recoil.
