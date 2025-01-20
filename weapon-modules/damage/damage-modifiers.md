@@ -6,7 +6,7 @@ description: Fine-tuning the damage based on conditions
 
 Damage modifiers modify the amount of damage dealt based on my factors, like armor, enchantments, potions, movement, hit point, and entity type.
 
-Every weapon, by default, uses the `Damage_Modifiers` section from config.yml. However, you might want your weapon to override those modifiers. Check out [#damage\_modifiers](./#damage\_modifiers "mention") from the [.](./ "mention") module.&#x20;
+Every weapon, by default, uses the `Damage_Modifiers` section from config.yml. However, you might want your weapon to override those modifiers. Check out [#damage\_modifiers](./#damage_modifiers "mention") from the [.](./ "mention") module.&#x20;
 
 ```yaml
   Damage_Modifiers:
@@ -61,12 +61,12 @@ Gets the armor value of the damaged entity (includes the armor they are wearing,
 A list of armor pieces and their hardcodes resistances.
 
 {% hint style="warning" %}
-This feature is hard to use correctly, so you should probably use [#per\_armor\_point](damage-modifiers.md#per\_armor\_point "mention") instead.
+This feature is hard to use correctly, so you should probably use [#per\_armor\_point](damage-modifiers.md#per_armor_point "mention") instead.
 {% endhint %}
 
 #### Enchantments
 
-A list of enchantments and their modifiers. The modifier is multiplied by the enchantment level. Use the [Enchantment](http://127.0.0.1:5000/s/IIUkVnlH40vVBzLhWWQ8/references#enchantment "mention") list.
+A list of enchantments and their modifiers. The modifier is multiplied by the enchantment level. Use the [Enchantment](https://app.gitbook.com/s/IIUkVnlH40vVBzLhWWQ8/references#enchantment "mention") list.
 
 The following example will do 8% less damage for each projectile protection level and 5% less for each level of protection.&#x20;
 
@@ -126,7 +126,7 @@ Reduce incoming damage when the victim is blocking with their shield and facing 
 
 #### Entities
 
-A list of [entity](http://127.0.0.1:5000/s/IIUkVnlH40vVBzLhWWQ8/references#entity "mention") and modifiers.&#x20;
+A list of [entity](https://app.gitbook.com/s/IIUkVnlH40vVBzLhWWQ8/references#entity "mention") and modifiers.&#x20;
 
 The following example does double damage to zombies:
 
@@ -137,7 +137,7 @@ The following example does double damage to zombies:
 
 #### Potions
 
-A list of [potion-effect](http://127.0.0.1:5000/s/IIUkVnlH40vVBzLhWWQ8/references#potion-effect "mention") and modifier.
+A list of [potion-effect](https://app.gitbook.com/s/IIUkVnlH40vVBzLhWWQ8/references#potion-effect "mention") and modifier.
 
 The following example does 10% more damage to entities with weakness.
 

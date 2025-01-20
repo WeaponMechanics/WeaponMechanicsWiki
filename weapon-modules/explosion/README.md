@@ -247,7 +247,7 @@ Cluster bombs use recursion, which means that explosions spawn projectiles, whic
   * Same as [#detonation](./#detonation "mention"), but now used for new projectiles.
 * `Mechanics`
   * The mechanics to trigger whenever a split occurs (good for playing a sound to warn players of the split).
-  * See the [Mechanics](http://127.0.0.1:5000/o/MgHAZkcfIhs3YcmBjk2r/s/hz7yMxlL81NxAT44nraH/ "mention") wiki.
+  * See the [Mechanics](https://app.gitbook.com/o/MgHAZkcfIhs3YcmBjk2r/s/hz7yMxlL81NxAT44nraH/ "mention") wiki.
   * `@Source{}` -> The shooter of the weapon
   * `@Target{}` -> The split location (not an entity).
 
@@ -284,7 +284,7 @@ Drops projectiles from the sky, good for flare guns.&#x20;
   * Same as [#detonation](./#detonation "mention"), but used for the dropped bombs.
 * `Mechanics`
   * The mechanics to trigger  whenever an airstrike spawns. Great for playing a "bombs away" sound.
-  * Use the [Mechanics](http://127.0.0.1:5000/o/MgHAZkcfIhs3YcmBjk2r/s/hz7yMxlL81NxAT44nraH/ "mention") wiki.
+  * Use the [Mechanics](https://app.gitbook.com/o/MgHAZkcfIhs3YcmBjk2r/s/hz7yMxlL81NxAT44nraH/ "mention") wiki.
   * `@Source{}` -> The shooter of the airstrike.
   * `@Target{}` -> The location of the projectile (not an entity).
 
@@ -317,7 +317,7 @@ Let's you execute mechanics on people who are looking at the explosion.&#x20;
   * The maximum distance away an entity should be to be safe.
 * `Mechanics`
   * The mechanics to trigger on each victim.
-  * Use the [Mechanics](http://127.0.0.1:5000/o/MgHAZkcfIhs3YcmBjk2r/s/hz7yMxlL81NxAT44nraH/ "mention") wiki.
+  * Use the [Mechanics](https://app.gitbook.com/o/MgHAZkcfIhs3YcmBjk2r/s/hz7yMxlL81NxAT44nraH/ "mention") wiki.
   * `@Source{}` the shooter of the weapon.
   * `@Target{}` the victim who was flash banged.
 

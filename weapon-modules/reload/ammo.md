@@ -22,7 +22,7 @@ If you want to prevent players from shooting guns forever, you should use `Ammo`
 
 #### Out\_Of\_Ammo\_Mechanics
 
-The mechanics triggered when the player tries to shoot but the weapon is empty. Use the [Mechanics](http://127.0.0.1:5000/o/MgHAZkcfIhs3YcmBjk2r/s/hz7yMxlL81NxAT44nraH/ "mention") wiki.&#x20;
+The mechanics triggered when the player tries to shoot but the weapon is empty. Use the [Mechanics](https://app.gitbook.com/o/MgHAZkcfIhs3YcmBjk2r/s/hz7yMxlL81NxAT44nraH/ "mention") wiki.&#x20;
 
 * `@Source{}` -> The player who tried to shoot.
 
@@ -38,7 +38,7 @@ The [trigger.md](../../trigger.md "mention") that is used to switch between ammo
 
 #### Ammo\_Switch\_Mechanics
 
-The mechanics triggered when you swap ammo types (So, right after the [#ammo\_switch\_trigger](ammo.md#ammo\_switch\_trigger "mention") is used).
+The mechanics triggered when you swap ammo types (So, right after the [#ammo\_switch\_trigger](ammo.md#ammo_switch_trigger "mention") is used).
 
 #### Ammos
 
@@ -75,7 +75,7 @@ Make sure you replace `<ammo_title>` with a unique name for your ammo, and do no
 
 #### Symbol
 
-This is what is displayed by the `<ammo_type>` placeholder in your [#weapon\_info\_display](../info.md#weapon\_info\_display "mention"). If you do not use any Symbol, it defaults to the ammo title.&#x20;
+This is what is displayed by the `<ammo_type>` placeholder in your [#weapon\_info\_display](../info.md#weapon_info_display "mention"). If you do not use any Symbol, it defaults to the ammo title.&#x20;
 
 #### Experience\_As\_Ammo\_Cost
 
@@ -91,12 +91,12 @@ Consumes items to be used as ammo. You can use one of `Bullet_Item` or `Magazine
 
 * `Bullet_Item`
   * The item for individual bullets.
-  * Uses the [Item Serializer](http://127.0.0.1:5000/s/IIUkVnlH40vVBzLhWWQ8/item-serializer "mention").
+  * Uses the [Item Serializer](https://app.gitbook.com/s/IIUkVnlH40vVBzLhWWQ8/item-serializer "mention").
 * `Magazine_Item`&#x20;
   * The item for full magazines to load into the gun.
-  * Uses the [Item Serializer](http://127.0.0.1:5000/s/IIUkVnlH40vVBzLhWWQ8/item-serializer "mention").
+  * Uses the [Item Serializer](https://app.gitbook.com/s/IIUkVnlH40vVBzLhWWQ8/item-serializer "mention").
 * `Ammo_Converter_Check`
   * (_Optional_)
   * Converts vanilla items into ammo usable by WeaponMechanics automatically.
   * For example, `Type: true` will convert all items of the same material to usable ammo.&#x20;
-  * This is the same as [#weapon\_converter\_check](../info.md#weapon\_converter\_check "mention").
+  * This is the same as [#weapon\_converter\_check](../info.md#weapon_converter_check "mention").

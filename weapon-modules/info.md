@@ -34,7 +34,7 @@ The `Info:` module is required for all weapons
 
 #### Weapon\_Item
 
-The item to use as the weapon. Uses the [Item Serializer](http://127.0.0.1:5000/s/IIUkVnlH40vVBzLhWWQ8/item-serializer "mention"). This is also where you define lore, attributes, etc.
+The item to use as the weapon. Uses the [Item Serializer](https://app.gitbook.com/s/IIUkVnlH40vVBzLhWWQ8/item-serializer "mention"). This is also where you define lore, attributes, etc.
 
 #### Weapon\_Info\_Display
 
@@ -111,7 +111,7 @@ Only the other hand may reload the weapon at a time and only other weapon may ap
 * `Mechanics_On_Deny`
   * These mechanics will be run when dual wielding is denied.
   * Helpful in sending denial messages and denial sounds.
-  * Use the [Mechanics](http://127.0.0.1:5000/o/MgHAZkcfIhs3YcmBjk2r/s/hz7yMxlL81NxAT44nraH/ "mention") wiki.
+  * Use the [Mechanics](https://app.gitbook.com/o/MgHAZkcfIhs3YcmBjk2r/s/hz7yMxlL81NxAT44nraH/ "mention") wiki.
 
 #### Weapon\_Converter\_Check
 

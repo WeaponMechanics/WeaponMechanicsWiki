@@ -43,7 +43,7 @@ The time in ticks (20 ticks = 1 second) between hits that deal damage.&#x20;
 
 * `Mechanics`
   * Mechanics triggered when you miss.
-  * Use [Mechanics](http://127.0.0.1:5000/o/MgHAZkcfIhs3YcmBjk2r/s/hz7yMxlL81NxAT44nraH/ "mention") wiki.
+  * Use [Mechanics](https://app.gitbook.com/o/MgHAZkcfIhs3YcmBjk2r/s/hz7yMxlL81NxAT44nraH/ "mention") wiki.
   * To trigger mechanics on HITS, use [#mechanics](damage/#mechanics "mention") from damage.&#x20;
 * `Melee_Miss_Delay`
   * The time in ticks before you can hit again.

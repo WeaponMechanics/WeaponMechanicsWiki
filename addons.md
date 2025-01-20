@@ -24,7 +24,7 @@ Adds cosmetic effects, like bullet impact sounds, 3D bullet "zip" feedback, trai
 
 Adds attachment modifiers to your weapons. Upgrade your weapons with craftable attachments, unlocking infinite possibilities for your guns. WeaponMechanicsPlus also adds armor attachments for ArmorMechanics, and new weapon modules:
 
-1. [Firemode](http://127.0.0.1:5000/s/9hOjsLnIiB5Xm8MOXgWU/firemode "mention")&#x20;
+1. [Firemode](https://app.gitbook.com/s/9hOjsLnIiB5Xm8MOXgWU/firemode "mention")&#x20;
 
 WeaponMechanicsPlus is a paid plugin that cannot be purchased now (Will be purchasable later).&#x20;
 

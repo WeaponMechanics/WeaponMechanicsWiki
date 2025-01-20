@@ -49,7 +49,7 @@ Here is the complete list of modules (You can also see this on the sidebar on th
 2. [shoot](shoot/ "mention")
    1. [spread.md](shoot/spread.md "mention")
    2. [recoil.md](shoot/recoil.md "mention")
-   3. [custom-durability.md](shoot/custom-durability.md "mention")
+   3. [Broken link](broken-reference "mention")
 3. [scope.md](scope.md "mention")
 4. [reload](reload/ "mention")
    1. [ammo.md](reload/ammo.md "mention")
@@ -57,12 +57,12 @@ Here is the complete list of modules (You can also see this on the sidebar on th
 6. [projectile](projectile/ "mention")
 7. [explosion](explosion/ "mention")
 8. [damage](damage/ "mention")
-9. [firearm\_action.md](firearm\_action.md "mention")
+9. [firearm\_action.md](firearm_action.md "mention")
 10. [melee.md](melee.md "mention")
-11. [Firemode](http://127.0.0.1:5000/s/9hOjsLnIiB5Xm8MOXgWU/firemode "mention") <mark style="color:yellow;">-> Requires WeaponMechanicsPlus</mark>
-12. [Cosmetics](http://127.0.0.1:5000/s/k51Oxya0kO19Qw62TtkL/cosmetics "mention") <mark style="color:yellow;">-> Requires WeaponMechanicsCosmetics</mark>
-13. [Trails](http://127.0.0.1:5000/s/k51Oxya0kO19Qw62TtkL/trails "mention") <mark style="color:yellow;">-> Requires WeaponMechanicsCosmetics</mark>
-14. [Show Time](http://127.0.0.1:5000/s/k51Oxya0kO19Qw62TtkL/show-time "mention") <mark style="color:yellow;">-> Requires WeaponMechanicsCosmetics</mark>
+11. [Firemode](https://app.gitbook.com/s/9hOjsLnIiB5Xm8MOXgWU/firemode "mention") <mark style="color:yellow;">-> Requires WeaponMechanicsPlus</mark>
+12. [Cosmetics](https://app.gitbook.com/s/k51Oxya0kO19Qw62TtkL/cosmetics "mention") <mark style="color:yellow;">-> Requires WeaponMechanicsCosmetics</mark>
+13. [Trails](https://app.gitbook.com/s/k51Oxya0kO19Qw62TtkL/trails "mention") <mark style="color:yellow;">-> Requires WeaponMechanicsCosmetics</mark>
+14. [Show Time](https://app.gitbook.com/s/k51Oxya0kO19Qw62TtkL/show-time "mention") <mark style="color:yellow;">-> Requires WeaponMechanicsCosmetics</mark>
 
 ## Required Modules
 

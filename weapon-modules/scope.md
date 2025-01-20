@@ -53,7 +53,7 @@ Defines the zoom amount. The value has to be between `1` and `10`. Where `1` is 
 
 #### Mechanics
 
-Mechanics triggered when the player scopes in. Use [Mechanics](http://127.0.0.1:5000/o/MgHAZkcfIhs3YcmBjk2r/s/hz7yMxlL81NxAT44nraH/ "mention").&#x20;
+Mechanics triggered when the player scopes in. Use [Mechanics](https://app.gitbook.com/o/MgHAZkcfIhs3YcmBjk2r/s/hz7yMxlL81NxAT44nraH/ "mention").&#x20;
 
 #### Shoot\_Delay\_After\_Scope
 
@@ -67,7 +67,7 @@ If this gun zooms in, this is the time in ticks (20 ticks = 1 second) after the 
   * Use [trigger.md](../trigger.md "mention").
 * `Mechanics`
   * These mechanics are run when entity zooms out.
-  * Use [Mechanics](http://127.0.0.1:5000/o/MgHAZkcfIhs3YcmBjk2r/s/hz7yMxlL81NxAT44nraH/ "mention").
+  * Use [Mechanics](https://app.gitbook.com/o/MgHAZkcfIhs3YcmBjk2r/s/hz7yMxlL81NxAT44nraH/ "mention").
 
 {% hint style="info" %}
 If you use `start_sneak`, then you should use `end_sneak` here for the trigger. Otherwise, the plugin will force players to sneak (press shift) twice to scope and to unscope.&#x20;

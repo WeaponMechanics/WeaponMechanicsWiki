@@ -27,7 +27,7 @@ The maximum amount of ammo that can be loaded into the gun.
 
 #### Ammo\_Per\_Reload
 
-Use this feature to load bullets individually (some real-life guns have built-in magazines, which you load into 1 by 1). Otherwise, it defaults to [#magazine\_size](./#magazine\_size "mention").&#x20;
+Use this feature to load bullets individually (some real-life guns have built-in magazines, which you load into 1 by 1). Otherwise, it defaults to [#magazine\_size](./#magazine_size "mention").&#x20;
 
 #### Unload\_Ammo\_On\_Reload
 
@@ -43,13 +43,13 @@ The time, in ticks, after a reload before the gun can be shot.
 
 #### Start\_Mechanics
 
-The mechanics triggered when the weapon starts reloading. Use the [Mechanics](http://127.0.0.1:5000/o/MgHAZkcfIhs3YcmBjk2r/s/hz7yMxlL81NxAT44nraH/ "mention") wiki.
+The mechanics triggered when the weapon starts reloading. Use the [Mechanics](https://app.gitbook.com/o/MgHAZkcfIhs3YcmBjk2r/s/hz7yMxlL81NxAT44nraH/ "mention") wiki.
 
 * `@Source{}` -> The entity holding the weapon.
 
 #### Finish\_Mechanics
 
-The mechanics triggered when the weapon completes reloading. Use the [Mechanics](http://127.0.0.1:5000/o/MgHAZkcfIhs3YcmBjk2r/s/hz7yMxlL81NxAT44nraH/ "mention") wiki.
+The mechanics triggered when the weapon completes reloading. Use the [Mechanics](https://app.gitbook.com/o/MgHAZkcfIhs3YcmBjk2r/s/hz7yMxlL81NxAT44nraH/ "mention") wiki.
 
 * `@Source{}` -> The entity holding the weapon.
 

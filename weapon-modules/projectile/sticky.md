@@ -30,7 +30,7 @@ description: Create sticky bombs and let projectiles stick to walls/entities
   * `True` = only blocks listed in `List` can be stuck to.
 * `List`
   * Material list of stickable/unstickable blocks depending on `Whitelist`.
-  * Use the [Material](http://127.0.0.1:5000/s/IIUkVnlH40vVBzLhWWQ8/references#material "mention") list for materials for your version.
+  * Use the [Material](https://app.gitbook.com/s/IIUkVnlH40vVBzLhWWQ8/references#material "mention") list for materials for your version.
 
 #### Entities
 
@@ -42,4 +42,4 @@ description: Create sticky bombs and let projectiles stick to walls/entities
   * `True` = only entities listed in `List` can be sticked to.
 * `List`
   * Entity list of stickable/unstickable entities depending on `Whitelist`.
-  * Use the [entity](http://127.0.0.1:5000/s/IIUkVnlH40vVBzLhWWQ8/references#entity "mention") list for entities for your version.
+  * Use the [entity](https://app.gitbook.com/s/IIUkVnlH40vVBzLhWWQ8/references#entity "mention") list for entities for your version.

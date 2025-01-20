@@ -45,7 +45,7 @@ This can be overridden per block in [#blocks](block-damage.md#blocks "mention").
 
 #### Default\_Mask
 
-Defines the [Material](http://127.0.0.1:5000/s/IIUkVnlH40vVBzLhWWQ8/references#material "mention") used to replace the block. Defaults to `AIR`.
+Defines the [Material](https://app.gitbook.com/s/IIUkVnlH40vVBzLhWWQ8/references#material "mention") used to replace the block. Defaults to `AIR`.
 
 This can be overridden per block in [#blocks](block-damage.md#blocks "mention").
 

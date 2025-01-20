@@ -95,7 +95,7 @@ If the current ammo amount after shooting is divisible by `Firearm_Action_Freque
   * The time, in ticks, it takes to open the weapon.
 * `Mechanics`
   * Delayed sound plays will be cancelled if firearm actions are cancelled.
-  * Use the [Mechanics](http://127.0.0.1:5000/o/MgHAZkcfIhs3YcmBjk2r/s/hz7yMxlL81NxAT44nraH/ "mention") wiki.
+  * Use the [Mechanics](https://app.gitbook.com/o/MgHAZkcfIhs3YcmBjk2r/s/hz7yMxlL81NxAT44nraH/ "mention") wiki.
 
 #### Close
 
@@ -103,4 +103,4 @@ If the current ammo amount after shooting is divisible by `Firearm_Action_Freque
   * The time, in ticks, it takes to close the weapon.
 * `Mechanics`
   * Delayed sound plays will be cancelled if firearm actions are cancelled
-  * Use the [Mechanics](http://127.0.0.1:5000/o/MgHAZkcfIhs3YcmBjk2r/s/hz7yMxlL81NxAT44nraH/ "mention") wiki.
+  * Use the [Mechanics](https://app.gitbook.com/o/MgHAZkcfIhs3YcmBjk2r/s/hz7yMxlL81NxAT44nraH/ "mention") wiki.

@@ -68,16 +68,16 @@ my_projectile:
 
 #### Type
 
-Which entity does the projectile look like? It can look like an arrow, a snowball, a fireball, an end dragon, or any kind of entity type you want. Projectiles can also be hidden by using `"invisible"` for this option (This helps save some CPU performance). Use an [entity](http://127.0.0.1:5000/s/IIUkVnlH40vVBzLhWWQ8/references#entity "mention") for the projectile (or `"invisible"`).&#x20;
+Which entity does the projectile look like? It can look like an arrow, a snowball, a fireball, an end dragon, or any kind of entity type you want. Projectiles can also be hidden by using `"invisible"` for this option (This helps save some CPU performance). Use an [entity](https://app.gitbook.com/s/IIUkVnlH40vVBzLhWWQ8/references#entity "mention") for the projectile (or `"invisible"`).&#x20;
 
 #### Projectile\_Item\_Or\_Block
 
 Some entities can use an item for extra data. A `DROPPED_ITEM` _**requires**_ it to determine which item to drop. `FALLING_BLOCK` _**requires**_ it to determine which block to use. `ARMOR_STAND` will add any item here on it's head. The armor stand is very useful for showing custom ammo models, like a rocket for an RPG.
 
-Use the [Item Serializer](http://127.0.0.1:5000/s/IIUkVnlH40vVBzLhWWQ8/item-serializer "mention") for all options.
+Use the [Item Serializer](https://app.gitbook.com/s/IIUkVnlH40vVBzLhWWQ8/item-serializer "mention") for all options.
 
 {% hint style="info" %}
-Since this uses the [Item Serializer](http://127.0.0.1:5000/s/IIUkVnlH40vVBzLhWWQ8/item-serializer "mention"), you can use the `Custom_Model_Data` in your projectiles, like this:
+Since this uses the [Item Serializer](https://app.gitbook.com/s/IIUkVnlH40vVBzLhWWQ8/item-serializer "mention"), you can use the `Custom_Model_Data` in your projectiles, like this:
 
 ```yaml
 my_projectile:
@@ -161,4 +161,4 @@ Use the [#through](./#through "mention") wiki page.
 #### Mechanics:
 
 Casts mechanics to projectile's location. Useful when you want to make beeping for a grenade.\
-Use [Mechanics](http://127.0.0.1:5000/o/MgHAZkcfIhs3YcmBjk2r/s/hz7yMxlL81NxAT44nraH/ "mention").&#x20;
+Use [Mechanics](https://app.gitbook.com/o/MgHAZkcfIhs3YcmBjk2r/s/hz7yMxlL81NxAT44nraH/ "mention").&#x20;

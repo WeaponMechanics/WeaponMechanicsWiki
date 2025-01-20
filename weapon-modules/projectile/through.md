@@ -43,7 +43,7 @@ Defaults to `1`. Setting value to `-1` means infinite.
   * `True` = only blocks listed in `List` can be passed through.
 * `List`
   * Material list of valid blocks depending on `Whitelist`.
-  * Use the [Material](http://127.0.0.1:5000/s/IIUkVnlH40vVBzLhWWQ8/references#material "mention") list for your version.
+  * Use the [Material](https://app.gitbook.com/s/IIUkVnlH40vVBzLhWWQ8/references#material "mention") list for your version.
   * Second argument is `speed multiplier` which multiplies the projectile's current speed with its value.
 
 #### Entities
@@ -59,5 +59,5 @@ Defaults to `1`. Setting value to `-1` means infinite.
   * `True` = only entities listed in `List` can be passed through.
 * `List`
   * Entity list of valid entities depending on `Whitelist`.
-  * Use the [entity](http://127.0.0.1:5000/s/IIUkVnlH40vVBzLhWWQ8/references#entity "mention") list for your version.
+  * Use the [entity](https://app.gitbook.com/s/IIUkVnlH40vVBzLhWWQ8/references#entity "mention") list for your version.
   * The second argument is `speed multiplier` which multiplies the projectile's current speed with its value.
