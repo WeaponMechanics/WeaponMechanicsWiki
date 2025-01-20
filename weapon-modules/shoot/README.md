@@ -77,7 +77,6 @@ Stim:
     Spread:  # Scroll down for more information
     Recoil:  # Scroll down for more information
     Mechanics: <Mechanics>
-    Custom_Durability:  # Scroll down for more information 
     Attract_Mobs:  # Scroll down for more information, WMP feature
     Offsets:
       Right_Hand: <Vector>
@@ -187,10 +186,6 @@ Check out the [recoil.md](recoil.md "mention") wiki page.
 Mechanics triggered when shooting. Use the [Mechanics](https://app.gitbook.com/o/MgHAZkcfIhs3YcmBjk2r/s/hz7yMxlL81NxAT44nraH/ "mention") wiki.&#x20;
 
 * `@Source{}` -> The entity shooting the gun.
-
-#### Custom\_Durability
-
-Check out the [#custom\_durability](./#custom\_durability "mention") wiki page.&#x20;
 
 #### Attract\_Mobs
 
