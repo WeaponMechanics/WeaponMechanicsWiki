@@ -17,39 +17,44 @@ Are you using 1.12.2 or 1.13.2? Minecraft versions older than 1.14.4 cannot use 
 
 The legacy skin system works with **hard set** values instead of adding numbers together. Here are all the options available:
 
-```yaml
-  Skin:
+<pre class="language-yaml"><code class="lang-yaml">  Skin:
     Default:
-      Type: <Material>
-      Legacy_Data: <Integer>
-      Custom_Model_Data: <Integer>
-      Durability: <Integer>
+      Type: &#x3C;Material>
+      Legacy_Data: &#x3C;Integer>
+      Custom_Model_Data: &#x3C;Integer>
+      Item_Model: "namespace:key"
+      Durability: &#x3C;Integer>
     Scope:
-      Type: <Material>
-      Legacy_Data: <Integer>
-      Custom_Model_Data: <Integer>
-      Durability: <Integer>
-    Scope_<number>:
-      Type: <Material>
-      Legacy_Data: <Integer>
-      Custom_Model_Data: <Integer>
-      Durability: <Integer>
+      Type: &#x3C;Material>
+      Legacy_Data: &#x3C;Integer>
+      Custom_Model_Data: &#x3C;Integer>
+      Item_Model: "namespace:key"
+      Durability: &#x3C;Integer>
+<strong>    Scope_&#x3C;number>:
+</strong>      Type: &#x3C;Material>
+      Legacy_Data: &#x3C;Integer>
+      Custom_Model_Data: &#x3C;Integer>
+      Item_Model: "namespace:key"
+      Durability: &#x3C;Integer>
     No_Ammo:
-      Type: <Material>
-      Legacy_Data: <Integer>
-      Custom_Model_Data: <Integer>
-      Durability: <Integer>
+      Type: &#x3C;Material>
+      Legacy_Data: &#x3C;Integer>
+      Custom_Model_Data: &#x3C;Integer>
+      Item_Model: "namespace:key"
+      Durability: &#x3C;Integer>
     Reload:
-      Type: <Material>
-      Legacy_Data: <Integer>
-      Custom_Model_Data: <Integer>
-      Durability: <Integer>
+      Type: &#x3C;Material>
+      Legacy_Data: &#x3C;Integer>
+      Custom_Model_Data: &#x3C;Integer>
+      Item_Model: "namespace:key"
+      Durability: &#x3C;Integer>
     Sprint:
-      Type: <Material>
-      Legacy_Data: <Integer>
-      Custom_Model_Data: <Integer>
-      Durability: <Integer>
-```
+      Type: &#x3C;Material>
+      Legacy_Data: &#x3C;Integer>
+      Custom_Model_Data: &#x3C;Integer>
+      Item_Model: "namespace:key"
+      Durability: &#x3C;Integer>
+</code></pre>
 
 
 
@@ -63,6 +68,8 @@ The legacy skin system works with **hard set** values instead of adding numbers 
   * A number where your model is defined.
   * For help creating a resource pack using model data, see [CustomModelData](https://www.planetminecraft.com/forums/communities/texturing/new-1-14-custom-item-models-tuto-578834/).
   * This can only be used in minecraft versions 1.14 and higher.
+* `Item_Model`:
+  * The custom model location in your resource pack, formatted as "`namespace:key"`
 * `Durability`:
   * A number where your model is defined.
   * For help creating a resource pack using durability, see [Durability](https://www.spigotmc.org/wiki/custom-item-models-in-1-9-and-up/).
