@@ -4,15 +4,15 @@ WeaponMechanics is the new age of weapons in Minecraft. The most advanced, effic
 
 ## Links
 
-* [Download](https://github.com/WeaponMechanics/MechanicsMain/releases)
-* [Spigot Page](https://www.spigotmc.org/resources/weaponmechanics-guns-in-minecraft-1-12-2-1-20-1.99913/)
-* [Source Code](https://github.com/WeaponMechanics/MechanicsMain)
-* [Feature Requests & Bug Reports](https://github.com/WeaponMechanics/MechanicsMain/issues/new/choose)
-* [Community Support](https://discord.gg/ERVgpfg) (Use `#weaponmechanics-support`)
+* [Download](https://github.com/WeaponMechanics/WeaponMechanics/releases)
+* [Pluginify Page](https://pluginify.org/resources/weaponmechanics-guns-in-minecraft.10/)
+* [Source Code](https://github.com/WeaponMechanics/WeaponMechanics)
+* [Feature Requests & Bug Reports](https://github.com/WeaponMechanics/WeaponMechanics/issues/new/choose)
+* [Community Support](https://discord.gg/v5zfM9pgWT)
 
 ## Creating/Modifying Configs
 
-I recommend using [VSCode](https://code.visualstudio.com/download) when modifying .yml files (and other text-based files, like .json).
+I recommend using [VSCode](https://code.visualstudio.com/download) when modifying `.yml` files.
 
 When creating a new weapon, copy and paste an existing weapon, then change/add config options. For example, if you want the gun to deal more damage, you should check out the [damage](weapon-modules/damage/ "mention") module. You can now adjust the numbers however you want using that wiki page.&#x20;
 
@@ -24,6 +24,6 @@ WeaponMechanics, its addons, and all our other plugins would not exist without s
 
 * [GitHub Sponsors](https://github.com/sponsors/CJCrafter)
 * [PayPal Donation](https://www.paypal.com/paypalme/cjcrafter)
-* [Purchase WeaponMechanicsCosmetics](https://www.spigotmc.org/resources/weaponmechanicscosmetics-guns-in-minecraft-1-12-2-1-20-1.104539/)
-* Purchase WeaponMechanicsPlus
+* [Purchase WeaponMechanicsCosmetics](https://pluginify.org/resources/13/)
+* [Purchase WeaponMechanicsPlus](pluginify.org/resources/14/)
 
