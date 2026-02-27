@@ -58,4 +58,4 @@ You probably don't want to interfere with block regeneration when working in pro
 
 ## Events
 
-For the complete list of events, check out the [events package](https://github.com/WeaponMechanics/MechanicsMain/tree/master/WeaponMechanics/src/main/java/me/deecaad/weaponmechanics/weapon/weaponevents). Most events inherit from the `WeaponEvent` class.
+For the complete list of events, check out the [events package](https://github.com/WeaponMechanics/WeaponMechanics/tree/master/weaponmechanics-core/src/main/java/me/deecaad/weaponmechanics/weapon/weaponevents). Most events inherit from the `WeaponEvent` class.
