@@ -34,7 +34,7 @@ The "big chunks of logic" are separated into handlers, like the ShootHandler and
 
 ## WeaponMechanicsAPI
 
-The [WeaponMechanicsAPI class](https://github.com/WeaponMechanics/MechanicsMain/blob/master/WeaponMechanics/src/main/java/me/deecaad/weaponmechanics/WeaponMechanicsAPI.java) is a list of easy-access examples. If you are looking for a specific method, try tracing the API calls to their source (This will help you find new methods).
+The [WeaponMechanicsAPI class](https://github.com/WeaponMechanics/WeaponMechanics/blob/master/weaponmechanics-core/src/main/java/me/deecaad/weaponmechanics/WeaponMechanicsAPI.java) is a list of easy-access examples. If you are looking for a specific method, try tracing the API calls to their source (This will help you find new methods).
 
 {% hint style="success" %}
 Want a new API method added? Submit a feature request!
