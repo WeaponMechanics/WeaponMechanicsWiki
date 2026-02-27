@@ -34,7 +34,7 @@ The "big chunks of logic" are separated into handlers, like the ShootHandler and
 
 ## WeaponMechanicsAPI
 
-The [WeaponMechanicsAPI class](https://github.com/WeaponMechanics/MechanicsMain/blob/master/WeaponMechanics/src/main/java/me/deecaad/weaponmechanics/WeaponMechanicsAPI.java) is a list of easy-access examples. If you are looking for a specific method, try tracing the API calls to their source (This will help you find new methods).
+The [WeaponMechanicsAPI class](https://github.com/WeaponMechanics/WeaponMechanics/blob/master/weaponmechanics-core/src/main/java/me/deecaad/weaponmechanics/WeaponMechanicsAPI.java) is a list of easy-access examples. If you are looking for a specific method, try tracing the API calls to their source (This will help you find new methods).
 
 {% hint style="success" %}
 Want a new API method added? Submit a feature request!
@@ -58,4 +58,4 @@ You probably don't want to interfere with block regeneration when working in pro
 
 ## Events
 
-For the complete list of events, check out the [events package](https://github.com/WeaponMechanics/MechanicsMain/tree/master/WeaponMechanics/src/main/java/me/deecaad/weaponmechanics/weapon/weaponevents). Most events inherit from the `WeaponEvent` class.
+For the complete list of events, check out the [events package](https://github.com/WeaponMechanics/WeaponMechanics/tree/master/weaponmechanics-core/src/main/java/me/deecaad/weaponmechanics/weapon/weaponevents). Most events inherit from the `WeaponEvent` class.
