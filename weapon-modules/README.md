@@ -49,7 +49,7 @@ Here is the complete list of modules (You can also see this on the sidebar on th
 2. [shoot](shoot/ "mention")
    1. [spread.md](shoot/spread.md "mention")
    2. [recoil.md](shoot/recoil.md "mention")
-   3. [Broken link](broken-reference "mention")
+   3. [Broken link](/broken/pages/FkbN9evQBnDXwlus4cf8 "mention")
 3. [scope.md](scope.md "mention")
 4. [reload](reload/ "mention")
    1. [ammo.md](reload/ammo.md "mention")

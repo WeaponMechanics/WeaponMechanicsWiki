@@ -24,7 +24,6 @@
 * [Addons](addons.md)
 * [Common Questions](common-questions.md)
 * [Developer API](developer-api/README.md)
-  * [Cloning Repository](developer-api/cloning-repository.md)
   * [Projectile Scripts](developer-api/projectile-scripts.md)
 
 ## 📄 Articles
