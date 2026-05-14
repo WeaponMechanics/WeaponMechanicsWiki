@@ -34,6 +34,8 @@ This section defines how your projectile moves and interacts with the environmen
       Maximum_Alive_Ticks: <ticks>
       Maximum_Travel_Distance: <distance>
       Size: <projectile size>
+      Incendiary_Projectile: <true/false>
+      Extinguish_In_Water: <true/false>
     Sticky:  # Scroll down for more info
     Bouncy:  # Scroll down for more info
     Through:  # Scroll down for more info
@@ -145,6 +147,14 @@ Defines the maximum amount of distance this projectile can travel before being r
 
 Defines the size of projectile that is used for hit detection. This size is added to each direction. Meaning `0.5` is same as 1x1x1 in size. Important note about using this is that, this only works for entities and NOT for blocks.\
 Defaults to `0.1`. As an example `arrow` and `snowball` have this set to `0.3` in vanilla.
+
+#### Incendiary\_Projectile
+
+Visually lights the projectile on fire, like an arrow from a flame bow.
+
+#### Extinguish\_In\_Water
+
+Paired with `Incendiary_Projectile` to remove the flame effect if the projectile travels through a liquid.
 
 #### Sticky
 
