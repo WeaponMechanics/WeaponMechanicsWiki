@@ -12,13 +12,13 @@ If you want players to load their guns with item bullets, you must configure an 
 
 #### <mark style="color:green;">How do I get the resource pack?</mark>
 
-The resource pack is automatically downloaded to the <mark style="color:yellow;">**your server -> plugins -> WeaponMechanics**</mark> folder. Alternatively, you can check the [latest release](https://github.com/WeaponMechanics/MechanicsMain/releases). We also have a [version history](https://github.com/WeaponMechanics/MechanicsMain/tree/master/resourcepack) of the resource pack.
+The resource pack is automatically downloaded to the <mark style="color:yellow;">**your server -> plugins -> WeaponMechanics**</mark> folder. Alternatively, you can check the [latest release](https://github.com/WeaponMechanics/MechanicsMain/releases).&#x20;
 
 ***
 
 #### <mark style="color:green;">Does WeaponMechanics support Bedrock (GeyserMC)?</mark>
 
-WeaponMechanics, as a plugin, fully supports bedrock (the guns shoot, reload, scope, etc.). However, the resource pack used by WeaponMechanics is not built for Bedrock. You will have to create your resource pack.
+No, only unofficially through GeyserMC. Any bugs should be reported to the authors of GeyserMC, we do not care.
 
 ***
 
@@ -32,9 +32,8 @@ Yes! By default, we included 3 different volumes in the resource pack: `.loud`, 
 
 WeaponMechanics is [free to download](https://github.com/WeaponMechanics/MechanicsMain/releases) and [open source](https://github.com/WeaponMechanics/MechanicsMain) for contributions! However, we do have add-ons that cost money. Want to support my continued development? Consider purchasing:
 
-1. BiomeManager -> Paint biomes different colors (with particle effects and more)!
-2. WeaponMechanicsCosmetics -> Cosmetic additions to your guns, including sounds, particles, and skins!
-3. WeaponMechanicsPlus -> Add attachments and modifiers to your guns for a dynamic and in-depth system!
+1. WeaponMechanicsCosmetics -> Cosmetic additions to your guns, including sounds, particles, and skins!
+2. WeaponMechanicsPlus -> Add attachments and modifiers to your guns for a dynamic and in-depth system!
 
 ***
 
@@ -57,12 +56,12 @@ Disable_Block_Break_Event: true  # change this to true
 
 #### <mark style="color:green;">Does WeaponMechanics support Folia?</mark>
 
-No. Unfortunately, none of the 'Mechanics Plugins' (Including WeaponMechanics, ArmorMechanics, etc.) support Folia, and we do not have any plans to support Folia due to the difficulties in supporting it. If you are willing to fund development of Folia support, send me a message on Discord @CJCrafter.&#x20;
-
-WeaponMechanics officially supports Spigot and Paper. Forks of Paper _will probably work_, but are not officially supported.&#x20;
+WeaponMechanics officially supports Paper and Folia. Forks of Paper/Folia _will probably work_, but are not officially supported.&#x20;
 
 ***
 
 #### <mark style="color:green;">I don't want my guns to stack, how can I make the weapons unstackable?</mark>
 
 You'll have to change the configs to an unstackable item, like a shovel. This means you will also have to modify the resource pack's feather.json, so the resource pack applies to the modified items.&#x20;
+
+You can also set the `Max_Stack_Size`
