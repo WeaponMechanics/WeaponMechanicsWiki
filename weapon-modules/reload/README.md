@@ -14,6 +14,7 @@ If you want your gun to have **infinite ammo** and to never reload, you can dele
     Shoot_Delay_After_Reload: <ticks>
     Start_Mechanics: <Mechanics>
     Finish_Mechanics: <Mechanics>
+    Auto_Reload_When_Empty: <true/false>
     Ammo:  # Scroll down for more information
 ```
 
@@ -52,6 +53,10 @@ The mechanics triggered when the weapon starts reloading. Use the [Mechanics](ht
 The mechanics triggered when the weapon completes reloading. Use the [Mechanics](https://app.gitbook.com/o/MgHAZkcfIhs3YcmBjk2r/s/hz7yMxlL81NxAT44nraH/ "mention") wiki.
 
 * `@Source{}` -> The entity holding the weapon.
+
+#### Auto\_Reload\_When\_Empty
+
+`true` by default, so when the weapon is empty and the user tries to shoot, the weapon will auto reload. Use `false` to force players to press the reload key.
 
 #### Ammo
 
