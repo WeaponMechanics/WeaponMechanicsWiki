@@ -28,6 +28,7 @@ If you are using WorldGuard, you can disable explosions in regions. Check out [#
         Spawn: <true/false>
         Entity: <true/false>
         Block: <true/false>
+      Impact_Mechanics: <Mechanics>
     Cluster_Bomb:
       Split_Projectile: <ProjectileSerializer> 
       Projectile_Speed: <Double>
@@ -215,8 +216,14 @@ Determines when the explosion triggers. For a Molotov, you probably want it to e
   * `Spawn` -> Triggers after spawning. Good for frags.
   * `Entity` -> Triggers after hitting an entity.
   * `Block` -> Triggers after hitting a block.
+* `Impact_Mechanics`
+  * The mechanics to trigger at the moment of impact (when a trigger above fires), _before_ the `Delay_After_Impact` has elapsed.
+  * This is separate from the explosion's [#mechanics](./#mechanics "mention"), which only trigger when the explosion actually occurs. Use `Impact_Mechanics` for a "beep" or warning sound that plays the instant the projectile lands, with the explosion following after the delay.
+  * Use the [Mechanics](https://app.gitbook.com/o/MgHAZkcfIhs3YcmBjk2r/s/hz7yMxlL81NxAT44nraH/ "mention") wiki.
+  * `@Source{}` -> The shooter of the weapon.
+  * `@Target{}` -> The location of the impact (not an entity).
 
-The following example will cause the explosion 5 seconds (100 ticks) after shooting the projectile.&#x20;
+The following example will cause the explosion 5 seconds (100 ticks) after shooting the projectile. A warning beep plays the instant the projectile lands, 5 seconds before the explosion goes off.&#x20;
 
 ```yaml
   Explosion:
@@ -226,6 +233,8 @@ The following example will cause the explosion 5 seconds (100 ticks) after shoot
       Remove_Projectile_On_Detonation: true
       Impact_When:
         Spawn: true
+      Impact_Mechanics:
+        - "Sound{sound=BLOCK_NOTE_BLOCK_PLING} @Target{}"
 ```
 
 #### Cluster\_Bomb
