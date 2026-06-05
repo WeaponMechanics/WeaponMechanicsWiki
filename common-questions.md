@@ -12,7 +12,7 @@ If you want players to load their guns with item bullets, you must configure an 
 
 #### <mark style="color:green;">How do I get the resource pack?</mark>
 
-The resource pack is automatically downloaded to the <mark style="color:yellow;">**your server -> plugins -> WeaponMechanics**</mark> folder. Alternatively, you can check the [latest release](https://github.com/WeaponMechanics/MechanicsMain/releases).&#x20;
+The resource pack is automatically downloaded to the <mark style="color:yellow;">**your server -> plugins -> WeaponMechanics**</mark> folder. Alternatively, you can check the [latest release](https://github.com/WeaponMechanics/MechanicsMain/releases).
 
 ***
 
@@ -24,7 +24,9 @@ No, only unofficially through GeyserMC. Any bugs should be reported to the autho
 
 #### <mark style="color:green;">The shooting sounds are super loud; can I turn them down?</mark>
 
-Yes! By default, we included 3 different volumes in the resource pack: `.loud`, `.ambient`, and `.quiet`. To reduce the volume, you must go into each weapon file and replace the `.loud` with `.ambient`. I recommend using a search and replace (`ctrl + f`).&#x20;
+Yes! By default, we included 3 different volumes in the resource pack: `.loud`, `.ambient`, and `.quiet`. To reduce the volume, you must go into each weapon file and replace the `.loud` with `.ambient`. I recommend using a search and replace (`ctrl + f`).
+
+Remember that in Minecraft, volume levels past `1.0` only effect the DISTANCE at which you can hear the sound. To actually change the volume, you need to change the volume of the sound file itself using a program like audacity.&#x20;
 
 ***
 
@@ -56,12 +58,27 @@ Disable_Block_Break_Event: true  # change this to true
 
 #### <mark style="color:green;">Does WeaponMechanics support Folia?</mark>
 
-WeaponMechanics officially supports Paper and Folia. Forks of Paper/Folia _will probably work_, but are not officially supported.&#x20;
+WeaponMechanics officially supports Paper and Folia. Forks of Paper/Folia _will probably work_, but are not officially supported.
 
 ***
 
 #### <mark style="color:green;">I don't want my guns to stack, how can I make the weapons unstackable?</mark>
 
-You'll have to change the configs to an unstackable item, like a shovel. This means you will also have to modify the resource pack's feather.json, so the resource pack applies to the modified items.&#x20;
+You'll have to change the configs to an unstackable item, like a shovel. This means you will also have to modify the resource pack's feather.json, so the resource pack applies to the modified items.
 
 You can also set the `Max_Stack_Size`
+
+***
+
+#### <mark style="color:green;">I purchased the plugin on Spigot, but Spigot is no longer updated. How can I get my license for free on Pluginify?</mark>
+
+All updates to WeaponMechanics, ArmorMechanics, WeaponMechanicsCosmetics, WeaponMechanicsPlus, etc. are all posted to [pluginify](https://pluginify.org/) now. This is due to changes in the Spigot EULA which prevents us from selling guns plugins.&#x20;
+
+You can get your licenses transferred over for free by posting a thread in our discord asking for help transferring your license. Make sure to include the following information:
+
+* Your spigot account (e.g. [https://www.spigotmc.org/members/cjcrafter1.447051/](https://www.spigotmc.org/members/cjcrafter1.447051/))
+* Your pluginify account (e.g. [https://pluginify.org/members/cjcrafter.1/](https://pluginify.org/members/cjcrafter.1/))
+* Which plugins you have purchased
+* Proof of purchase
+
+Discord is the only place to get support for this.
