@@ -3,6 +3,7 @@
 * [Home](README.md)
 * [Weapon Modules](weapon-modules/README.md)
   * [Info](weapon-modules/info.md)
+  * [Durability and Repair](weapon-modules/durability-and-repair.md)
   * [Shoot](weapon-modules/shoot/README.md)
     * [Spread](weapon-modules/shoot/spread.md)
     * [Recoil](weapon-modules/shoot/recoil.md)
