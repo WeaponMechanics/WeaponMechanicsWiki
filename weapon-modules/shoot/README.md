@@ -73,6 +73,7 @@ Stim:
     Consume_Item_On_Shoot: <true/false>
     Destroy_When_Empty: <true/false>
     Ammo_Per_Shot: <amount>
+    Durability_Per_Shot: <amount>
     Reset_Fall_Distance: <true/false>
     Spread:  # Scroll down for more information
     Recoil:  # Scroll down for more information
@@ -168,6 +169,10 @@ Use `true` to delete the weapon when the magazine reaches 0. This is used for sp
 #### Ammo\_Per\_Shot
 
 How much ammo to consume per shot.&#x20;
+
+#### Durability\_Per\_Shot
+
+The amount of item durability consumed after each successful shot. It defaults to `0`, meaning shooting wear is disabled unless explicitly configured. See [durability-and-repair.md](../durability-and-repair.md "mention") for depletion modes and repair kits.
 
 #### Reset\_Fall\_Distance
 

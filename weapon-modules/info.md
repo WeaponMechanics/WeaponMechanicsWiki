@@ -19,6 +19,10 @@ The `Info:` module is required for all weapons
       Lore: <true/false>
       Enchants: <true/false>
       Custom_Model_Data: <true/false>
+    Durability:
+      On_Depleted: <BREAK/DISABLE>
+    Weapon_Break_Mechanics: <Mechanics>
+    Weapon_Depleted_Mechanics: <Mechanics>
     Weapon_Get_Mechanics: <Mechanics>
     Weapon_Equip_Mechanics: <Mechanics>
     Weapon_Equip_Delay: <ticks>
@@ -35,6 +39,10 @@ The `Info:` module is required for all weapons
 #### Weapon\_Item
 
 The item to use as the weapon. Uses the [Item Serializer](https://app.gitbook.com/s/IIUkVnlH40vVBzLhWWQ8/item-serializer "mention"). This is also where you define lore, attributes, etc.
+
+#### Durability
+
+Controls whether a weapon breaks or remains disabled after reaching its maximum damage. See [durability-and-repair.md](durability-and-repair.md "mention") for durability loss, depletion mechanics, Mending, block wear, and repair kits.
 
 #### Weapon\_Info\_Display
 
